@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net" modified="2023-05-10T14:48:27.795Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 OPR/98.0.0.0" etag="77Bo3j5ystty7SqNj1Tf" version="21.2.1" type="device">
+  <diagram name="Page-1" id="9yylYrD-sp5Q_lMJvUIp">
+    <mxGraphModel dx="1760" dy="504" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="axSdykK3Wyy_x3UzqJak-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="axSdykK3Wyy_x3UzqJak-1" target="axSdykK3Wyy_x3UzqJak-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-12" value="Manzanas Peladas" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="axSdykK3Wyy_x3UzqJak-3">
+          <mxGeometry x="-0.2222" y="2" relative="1" as="geometry">
+            <mxPoint x="12" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-11" value="Residuos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="axSdykK3Wyy_x3UzqJak-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="90" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-26" value="Agua" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="axSdykK3Wyy_x3UzqJak-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="270" />
+              <mxPoint x="160" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-1" value="Lavado y Pelado" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-5" value="Manzanas Picadas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="axSdykK3Wyy_x3UzqJak-2" target="axSdykK3Wyy_x3UzqJak-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-14" value="Semillas y Huesos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="axSdykK3Wyy_x3UzqJak-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-2" value="Picado" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="330" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-7" value="Manzanas Machacadas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="axSdykK3Wyy_x3UzqJak-4" target="axSdykK3Wyy_x3UzqJak-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-16" value="Desperdicio" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="axSdykK3Wyy_x3UzqJak-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-4" value="Machacado" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="600" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-18" value="Vapor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="axSdykK3Wyy_x3UzqJak-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="930" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="axSdykK3Wyy_x3UzqJak-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1090" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-23" value="Mermelada" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="axSdykK3Wyy_x3UzqJak-22">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-6" value="Reduccion" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="870" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-8" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="axSdykK3Wyy_x3UzqJak-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="230" as="sourcePoint" />
+            <mxPoint x="100" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-9" value="Manzanas&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="axSdykK3Wyy_x3UzqJak-8">
+          <mxGeometry x="-0.425" relative="1" as="geometry">
+            <mxPoint x="-42" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-19" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="axSdykK3Wyy_x3UzqJak-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="930" y="140" as="sourcePoint" />
+            <mxPoint x="910" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-20" value="Azucar" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="axSdykK3Wyy_x3UzqJak-19">
+          <mxGeometry x="-0.4333" relative="1" as="geometry">
+            <mxPoint y="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="axSdykK3Wyy_x3UzqJak-27" value="Agua" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="axSdykK3Wyy_x3UzqJak-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="140" as="sourcePoint" />
+            <mxPoint x="140" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
