@@ -1,0 +1,19 @@
+Proceso 1 Lavado y Pelado
+Manzanas = 436g
+Residuos = 44g
+Agua = 331g
+Fruta consumible = 389
+
+Proceso 2 Picado
+Semillas y huesos = 22g
+Fruta consumible = 365g
+
+proceso 3 molido
+manzana machacada = 351g
+desperdicio  = 14g
+
+proceso 4 reduccion
+Azucar = 177g
+Mermelada = 325g
+
+436/325 
