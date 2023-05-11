@@ -1,3 +1,13 @@
+var PrecioManzana;
+var PrecioAzucar;
+var PrecioMermelada;
+
+function CallPrice(PrecioMan, PrecioAz, PrecioMer) {
+    PrecioManzana = PrecioMan;
+    PrecioAzucar = PrecioAz;
+    PrecioMermelada = PrecioMer;
+}
+
 function InputManzanas(Manzanas) {
     //Proceso 1
     let Residuos1 = Manzanas * (((47*100)/436)/100);
@@ -15,7 +25,7 @@ function InputManzanas(Manzanas) {
     let Azucar = ManzanaMachacada / 2;
     let Mermelada = Manzanas * (325/436);
 
-    return {"Azucar":Azucar, "Mermelada":Mermelada};
+    return {"Azucar":{"Kg":Azucar, "Precio":Azucar * PrecioAzucar}, "Mermelada":{"Kg":Mermelada, "Precio": Mermelada * PrecioMermelada}};
 }
 
 function InputMermelada(Mermelada) {
@@ -36,7 +46,7 @@ function InputMermelada(Mermelada) {
     //Proceso 4
     let Azucar = ManzanaMachacada / 2;
 
-    return {"Manzanas": Manzanas, "Azucar": Azucar}
+    return {"Manzanas":{"Kg":Manzanas, "Precio":Manzanas * PrecioManzana}, "Azucar":{"Kg":Azucar, "Precio": Azucar * PrecioAzucar}};
     
 }
 
@@ -61,7 +71,7 @@ function InputAzucar(Azucar) {
 
     let Mermelada = Manzanas * (325/436);
 
-    return {"Manzanas": Manzanas, "Mermelada": Mermelada};
+    return {"Manzanas":{"Kg":Manzanas, "Precio":Manzanas * PrecioManzana}, "Mermelada":{"Kg":Mermelada, "Precio": Mermelada * PrecioMermelada}};
 }
 
 console.log(InputAzucar(100));
