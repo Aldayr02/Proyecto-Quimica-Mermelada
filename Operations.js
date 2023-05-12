@@ -1,94 +1,89 @@
-var PrecioManzana = 50;
-var PrecioAzucar = 20;
-var PrecioMermelada = 100;
+var precioManzana ;/* = 50 */
+var precioAzucar ;/* = 20 */
+var precioMermelada ;/* = 100 */
 
-function CallPrice(PrecioMan, PrecioAz, PrecioMer) {
-    PrecioManzana = PrecioMan;
-    PrecioAzucar = PrecioAz;
-    PrecioMermelada = PrecioMer;
+function putPrice(precioMan, precioAzu, precioMer) {
+    precioManzana = precioMan;
+    precioAzucar = precioAzu;
+    precioMermelada = precioMer;
 }
 
-function InputManzanas(Manzanas) {
+function inputManzanas(Manzanas) {
     //Proceso 1
-    let Residuos1 = Manzanas * (((47*100)/436)/100);
-    let ManzanasPeladas = Manzanas - Residuos1;
+    let residuos1 = Manzanas * (((47*100)/436)/100);
+    let manzanasPeladas = Manzanas - residuos1;
 
     //Proceso 2
-    let Residuos2 = ManzanasPeladas * (((24*100)/389)/100);
-    let ManzanasPicadas = ManzanasPeladas - Residuos2;
+    let residuos2 = manzanasPeladas * (((24*100)/389)/100);
+    let manzanasPicadas = manzanasPeladas - residuos2;
 
     //Proceso 3
-    let Residuos3 = ManzanasPicadas * (((14*100)/365)/100)
-    let ManzanaMachacada = ManzanasPicadas - Residuos3;
+    let residuos3 = manzanasPicadas * (((14*100)/365)/100)
+    let manzanaMachacada = manzanasPicadas - residuos3;
 
     //Proceso 4
-    let Azucar = ManzanaMachacada / 2;
-    let Mermelada = Manzanas * (325/436);
+    let azucar = manzanaMachacada / 2;
+    let mermelada = Manzanas * (325/436);
 
-    let Egreso = (Azucar * PrecioAzucar) + (Manzanas * PrecioManzana);
-    let Ingreso = Mermelada * PrecioMermelada;
+    let egreso = (azucar * precioAzucar) + (Manzanas * precioManzana);
+    let ingreso = mermelada * precioMermelada;
 
-    return {"Azucar":{"Kg":Azucar, "Precio":Azucar * PrecioAzucar}, "Mermelada":{"Kg":Mermelada, "Precio": Mermelada * PrecioMermelada}, "Balance":{"Egresos": Egreso, "Ingreso":Ingreso, "Utilidad": Ingreso - Egreso}};
+    return {"azucar":{"kg":azucar, "precio":azucar * precioAzucar}, "mermelada":{"kg":mermelada, "precio": mermelada * precioMermelada}, "balance":{"egresos": egreso, "ingreso":ingreso, "utilidad": ingreso - egreso}};
 }
 
-function InputMermelada(Mermelada) {
+function inputMermelada(Mermelada) {
 
     //Proceso 1
-    let Manzanas = Mermelada * (436/325)
-    let Residuos1 = Manzanas * (((47*100)/436)/100);
-    let ManzanasPeladas = Manzanas - Residuos1;
+    let manzanas = Mermelada * (436/325)
+    let residuos1 = manzanas * (((47*100)/436)/100);
+    let manzanasPeladas = manzanas - residuos1;
 
     //Proceso 2
-    let Residuos2 = ManzanasPeladas * (((24*100)/389)/100);
-    let ManzanasPicadas = ManzanasPeladas - Residuos2;
+    let residuos2 = manzanasPeladas * (((24*100)/389)/100);
+    let manzanasPicadas = manzanasPeladas - residuos2;
 
     //Proceso 3
-    let Residuos3 = ManzanasPicadas * (((14*100)/365)/100)
-    let ManzanaMachacada = ManzanasPicadas - Residuos3;
+    let residuos3 = manzanasPicadas * (((14*100)/365)/100)
+    let manzanaMachacada = manzanasPicadas - residuos3;
 
     //Proceso 4
-    let Azucar = ManzanaMachacada / 2;
+    let azucar = manzanaMachacada / 2;
     
-    let Egreso = (Azucar * PrecioAzucar) + (Manzanas * PrecioManzana);
-    let Ingreso = Mermelada * PrecioMermelada;
+    let egreso = (azucar * precioAzucar) + (manzanas * precioManzana);
+    let ingreso = Mermelada * precioMermelada;
 
-    return {"Manzanas":{"Kg":Manzanas, "Precio":Manzanas * PrecioManzana}, "Azucar":{"Kg":Azucar, "Precio": Azucar * PrecioAzucar}, "Balance":{"Egresos": Egreso, "Ingreso":Ingreso, "Utilidad": Ingreso - Egreso}};
+    return {"manzanas":{"kg":manzanas, "precio":manzanas * precioManzana}, "azucar":{"kg":azucar, "precio": azucar * precioAzucar}, "balance":{"egresos": egreso, "ingreso":ingreso, "utilidad": ingreso - egreso}};
     
 }
 
-function InputAzucar(Azucar) {
+function inputAzucar(Azucar) {
     //Proceso 1
-    let ManzanasConstante = 436
-    let Residuos1 = ManzanasConstante * (((47*100)/436)/100);
-    let ManzanasPeladas = ManzanasConstante - Residuos1;
+    let manzanasConstante = 436
+    let residuos1 = manzanasConstante * (((47*100)/436)/100);
+    let manzanasPeladas = manzanasConstante - residuos1;
 
     //Proceso 2
-    let Residuos2 = ManzanasPeladas * (((24*100)/389)/100);
-    let ManzanasPicadas = ManzanasPeladas - Residuos2;
+    let residuos2 = manzanasPeladas * (((24*100)/389)/100);
+    let manzanasPicadas = manzanasPeladas - residuos2;
 
     //Proceso 3
-    let Residuos3 = ManzanasPicadas * (((14*100)/365)/100)
-    let ManzanaMachacada = ManzanasPicadas - Residuos3;
+    let residuos3 = manzanasPicadas * (((14*100)/365)/100)
+    let manzanaMachacada = manzanasPicadas - residuos3;
 
     //Proceso 4
-    let AzucarConstante = ManzanaMachacada / 2;
+    let azucarConstante = manzanaMachacada / 2;
 
-    let Manzanas = (Azucar * 436) / AzucarConstante;
+    let manzanas = (Azucar * 436) / azucarConstante;
 
-    let Mermelada = Manzanas * (325/436);
+    let mermelada = manzanas * (325/436);
 
-    let Egreso = (Azucar * PrecioAzucar) + (Manzanas * PrecioManzana);
-    let Ingreso = Mermelada * PrecioMermelada;
+    let egreso = (Azucar * precioAzucar) + (manzanas * precioManzana);
+    let ingreso = mermelada * precioMermelada;
 
-    return {"Manzanas":{"Kg":Manzanas, "Precio":Manzanas * PrecioManzana}, "Mermelada":{"Kg":Mermelada, "Precio": Mermelada * PrecioMermelada}, "Balance":{"Egresos": Egreso, "Ingreso":Ingreso, "Utilidad": Ingreso - Egreso}};
+    return {"manzanas":{"kg":manzanas, "precio":manzanas * precioManzana}, "mermelada":{"kg":mermelada, "precio": mermelada * precioMermelada}, "balance":{"egresos": egreso, "ingreso":ingreso, "utilidad": ingreso - egreso}};
 }
 
-
-console.log(InputAzucar(100));
-console.log(InputManzanas(500));
-console.log(InputMermelada(500));
-
-
-exports.InputManzanas = InputManzanas;
-exports.InputMermelada = InputMermelada;
-exports.InputAzucar = InputAzucar;
+exports.inputManzanas = inputManzanas;
+exports.inputMermelada = inputMermelada;
+exports.inputAzucar = inputAzucar;
+exports.putPrice = putPrice;

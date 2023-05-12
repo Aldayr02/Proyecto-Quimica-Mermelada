@@ -4,7 +4,7 @@ const url = require("url");
 const path = require("path");
 const cors = require("cors");
 const express = require("express");
-const operations = require('./Operations');
+const operations = require('./operations');
 
 const app = express();
 const port = 3000;
@@ -23,13 +23,12 @@ app.listen(port, () => {
 });
 
 app.get('/', (req, res) => {
-	console.log(operations.InputAzucar(100));
-	console.log(operations.InputManzanas(500));
-	console.log(operations.InputMermelada(500));
+	operations.putPrice(50,20,100);
+	console.log(operations.inputAzucar(100));
+	console.log("hola")
 
-    res.sendFile(path.join(__dirname, "./FRONTEND/Home.html"));
+    res.sendFile(path.join(__dirname, "./FRONTEND/home.html"));
 });
 
 app.get('/Manzanas',(req, res)=>{
-	
 });
