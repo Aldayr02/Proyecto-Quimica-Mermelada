@@ -1,148 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Mermelada Calculator</title>
-    <!-- Required meta tags -->
-   
-   
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+		<title>Mermelada Calculator</title>
+		<!-- Required meta tags -->
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-	<script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Styles/home.css" />
-  </head>
-  <body >
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <div id="g" class="col-12">
-        <form>
-            <div class="container" >
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-3">
-                        <div class="panel panel-default">
-                            <div class="panel panel-primary">
-                            
-                                <h2 class="text-center"  style="color: #171C2D;"> Manzanas </h2>
-                            
-                                <div class="panel-body">    
-                                    <table class="table table-striped table-condensed" style="background-color:#E37239;">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-                                        <thead>
-                                            <tr>
-                                                <th></th>
-                                                <th>Manzanas</th>
-                                                <th>Azucar</th>                                            
-                                                <th>Mermelada</th>   
-                                            </tr>
-                                        </thead> 
+		<script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-                                        <tbody>
-                                            <tr>
-                                                
-                                                <td>kg</td>
-                                                <td><input type="number" style="background-color: rgb(237, 170, 0);" step="0.1"></td>
-                                                <td id="ManKgAz">000</td>
-                                                <td id="ManKgMer">000</td>
-                                                
-                                            </tr>
-                                            <tr>
-                                                
-                                                <td>Precio</td>
-                                                <td id="ManPreMan">000</td>
-                                                <td id="ManPreAz">000</td>
-                                                <td id="ManPreMer">000</td>
-                                                
-                                            </tr>
-                                            <tr>
-                                                <td colspan="4"><button id="ManButton" class="btn btn-primary col-12" role="button">Calcular</button></td>
-                                            </tr>
-                                        </tbody>
-                                                
-                                    </table>
-                                    <h2 class="text-center"  style="color: #171C2D;"> Mermelada </h2>
-                                    <table class="table table-striped table-condensed" style="background-color:#E37239;">
+		<link rel="stylesheet" href="Styles/home.css" />
+		<script defer src="script.js"></script>
+	</head>
+	<body>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<div id="g" class="col-12">
+			<form>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-3">
+							<div class="panel panel-default">
+								<div class="panel panel-primary">
+									<h2 class="text-center" style="color: #171c2d">Manzanas</h2>
 
-                                        <thead>
-                                            <tr>
-                                                <th></th>
-                                                <th>Mermelada</th>
-                                                <th>Manzanas</th>                                           
-                                                <th>Azucar</th>   
-                                            </tr>
-                                        </thead> 
+									<div class="panel-body">
+										<table class="table table-striped table-condensed" style="background-color: #e37239">
+											<thead>
+												<tr>
+													<th></th>
+													<th>Manzanas</th>
+													<th>Azucar</th>
+													<th>Mermelada</th>
+												</tr>
+											</thead>
 
-                                        <tbody>
-                                            <tr>
-                                                
-                                                <td>kg</td>
-                                                <td><input type="number" style="background-color: rgb(237, 170, 0);" step="0.1"></td>
-                                                <td id="MerKgMan">000</td>
-                                                <td id="MerKgAz">000</td>
-                                                
-                                            </tr>
-                                            <tr>
-                                                
-                                                <td>Precio</td>
-                                                <td id="MerPreMer">000</td>
-                                                <td id="MerPreMan">000</td>
-                                                <td id="MerPreAz">000</td>
-                                                
-                                            </tr>
-                                            <tr>
-                                                <td colspan="4"><button id="ManButton" class="btn btn-primary col-12" role="button">Calcular</button></td>
-                                            </tr>
-                                        </tbody>       
-                                    </table>
-                                    <h2 class="text-center"  style="color: #171C2D;"> Azucar </h2>
-                                    <table class="table table-striped table-condensed" style="background-color:#E37239;">
+											<tbody>
+												<tr>
+													<td>kg</td>
+													<td><input id="ManIn" type="number" style="background-color: rgb(237, 170, 0)" step="0.1" /></td>
+													<td id="ManKgAz">000</td>
+													<td id="ManKgMer">000</td>
+												</tr>
+												<tr>
+													<td>Precio</td>
+													<td id="ManPreMan">000</td>
+													<td id="ManPreAz">000</td>
+													<td id="ManPreMer">000</td>
+												</tr>
+												<tr>
+													<td colspan="4"><button type="button" id="ManButton" class="btn btn-primary col-12" onclick="calcularManzana()">Calcular</button></td>
+												</tr>
+											</tbody>
+										</table>
+										<h2 class="text-center" style="color: #171c2d">Mermelada</h2>
+										<table class="table table-striped table-condensed" style="background-color: #e37239">
+											<thead>
+												<tr>
+													<th></th>
+													<th>Mermelada</th>
+													<th>Manzanas</th>
+													<th>Azucar</th>
+												</tr>
+											</thead>
 
-                                        <thead>
-                                            <tr>
-                                                <th></th>
-                                                <th>Azucar</th>
-                                                <th>Manzanas</th>                                        
-                                                <th>Mermelada</th>   
-                                            </tr>
-                                        </thead> 
+											<tbody>
+												<tr>
+													<td>kg</td>
+													<td><input type="number" style="background-color: rgb(237, 170, 0)" step="0.1" /></td>
+													<td id="MerKgMan">000</td>
+													<td id="MerKgAz">000</td>
+												</tr>
+												<tr>
+													<td>Precio</td>
+													<td id="MerPreMer">000</td>
+													<td id="MerPreMan">000</td>
+													<td id="MerPreAz">000</td>
+												</tr>
+												<tr>
+													<td colspan="4"><button id="ManButton" class="btn btn-primary col-12" role="button">Calcular</button></td>
+												</tr>
+											</tbody>
+										</table>
+										<h2 class="text-center" style="color: #171c2d">Azucar</h2>
+										<table class="table table-striped table-condensed" style="background-color: #e37239">
+											<thead>
+												<tr>
+													<th></th>
+													<th>Azucar</th>
+													<th>Manzanas</th>
+													<th>Mermelada</th>
+												</tr>
+											</thead>
 
-                                        <tbody>
-                                            <tr>
-                                                
-                                                <td>kg</td>
-                                                <td><input type="number" style="background-color: rgb(237, 170, 0);" step="0.1"></td>
-                                                <td id="AzKgMan">000</td>
-                                                <td id="AzKgMer">000</td>
-                                                
-                                            </tr>
-                                            <tr>
-                                                
-                                                <td>Precio</td>
-                                                <td id="AzPreAz">000</td>
-                                                <td id="AzPreMan">000</td>
-                                                <td id="AzPreMer">000</td>
-                                                
-                                            </tr>
-                                            <tr>
-                                                <td colspan="4"><button id="ManButton" class="btn btn-primary col-12" role="button">Calcular</button></td>
-                                            </tr>
-                                            
-                                        </tbody>
-                                                
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form> 
-    </div>
-  </body>
+											<tbody>
+												<tr>
+													<td>kg</td>
+													<td><input type="number" style="background-color: rgb(237, 170, 0)" step="0.1" /></td>
+													<td id="AzKgMan">000</td>
+													<td id="AzKgMer">000</td>
+												</tr>
+												<tr>
+													<td>Precio</td>
+													<td id="AzPreAz">000</td>
+													<td id="AzPreMan">000</td>
+													<td id="AzPreMer">000</td>
+												</tr>
+												<tr>
+													<td colspan="4"><button id="ManButton" class="btn btn-primary col-12" role="button">Calcular</button></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
 </html>
