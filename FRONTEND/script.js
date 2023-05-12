@@ -1,7 +1,7 @@
 // cSpell: disable
 
-const Url = "http://localhost:3000";
-// const Url = "https://good-pear-badger-wig.cyclic.app";
+// const Url = "http://localhost:3000";
+const Url = "https://good-pear-badger-wig.cyclic.app";
 
 function makeRequest(method, url, headers = undefined, body = undefined) {
 	return new Promise(function (resolve, reject) {
