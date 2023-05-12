@@ -1,5 +1,47 @@
 body
 {
+    background-color:#EAB56F;
     padding-top: 40px;
+    background-image: url('http://i.imgur.com/h26izWg.jpg');
 }
- 
+
+
+.btn-primary {
+  background-color: #FDB064;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #4c0033;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem #4b007d96;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #4c003393;
+  border-color: #4c003393;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #4b007d96;
+}
+
+.btn-primary:active {
+  background: #6605a7;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: #fff;
+  background-color: #4b007d96;
+  border-color: #4b007d96;
+}
