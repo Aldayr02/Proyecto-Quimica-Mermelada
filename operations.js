@@ -29,9 +29,9 @@ function inputManzanas(manzanas) {
 	let egreso = azucar * precioAzucar + manzanas * precioManzana;
 	let ingreso = mermelada * precioMermelada;
 
-	return {manzanas:{kg: manzanas/1000 , precio: manzanas * precioManzana}, azucar: { kg: azucar/1000 , precio: azucar * precioAzucar }, mermelada: { kg: mermelada/1000 , precio: mermelada * precioMermelada }, balance: { egresos: egreso, ingresos: ingreso, utilidad: ingreso - egreso } };
+	return {manzanas:{kg: manzanas/1000 , precio: manzanas/1000 * precioManzana}, azucar: { kg: azucar/1000 , precio: azucar/1000 * precioAzucar }, mermelada: { kg: mermelada/1000 , precio: mermelada/1000 * precioMermelada }, balance: { egresos: egreso, ingresos: ingreso, utilidad: ingreso - egreso } };
 }
-
+ 
 function inputMermelada(mermelada) {
 	//Proceso 1
 	mermelada *= 1000;
@@ -51,9 +51,9 @@ function inputMermelada(mermelada) {
 	let azucar = (manzanaMachacada / 2) ;
 
 	let egreso = azucar * precioAzucar + manzanas * precioManzana;
-	let ingreso = mermelada * precioMermelada;
+	let ingreso = mermelada * precioMermelada; 
 
-	return {manzanas:{kg: manzanas/1000 , precio: manzanas * precioManzana}, azucar: { kg: azucar/1000 , precio: azucar * precioAzucar }, mermelada: { kg: mermelada/1000 , precio: mermelada * precioMermelada }, balance: { egresos: egreso, ingresos: ingreso, utilidad: ingreso - egreso } };
+	return {manzanas:{kg: manzanas/1000 , precio: manzanas/1000 * precioManzana}, azucar: { kg: azucar/1000 , precio: azucar/1000 * precioAzucar }, mermelada: { kg: mermelada/1000 , precio: mermelada/1000 * precioMermelada }, balance: { egresos: egreso, ingresos: ingreso, utilidad: ingreso - egreso } };
 }
 
 function inputAzucar(azucar) {
@@ -81,9 +81,9 @@ function inputAzucar(azucar) {
 	let egreso = azucar * precioAzucar + manzanas * precioManzana;
 	let ingreso = mermelada * precioMermelada;
 
-	return {manzanas:{kg: manzanas/1000 , precio: manzanas * precioManzana}, azucar: { kg: azucar/1000 , precio: azucar * precioAzucar }, mermelada: { kg: mermelada/1000 , precio: mermelada * precioMermelada }, balance: { egresos: egreso, ingresos: ingreso, utilidad: ingreso - egreso } };
+	return {manzanas:{kg: manzanas/1000 , precio: manzanas/1000 * precioManzana}, azucar: { kg: azucar/1000 , precio: azucar/1000 * precioAzucar }, mermelada: { kg: mermelada/1000 , precio: mermelada/1000 * precioMermelada }, balance: { egresos: egreso, ingresos: ingreso, utilidad: ingreso - egreso } };
 }
- 
+   
 exports.inputManzanas = inputManzanas;
 exports.inputMermelada = inputMermelada;
 exports.inputAzucar = inputAzucar;
