@@ -69,3 +69,6 @@ console.log(InputManzanas(500));
 console.log(InputMermelada(500));
 
 
+exports.InputManzanas = InputManzanas;
+exports.InputMermelada = InputMermelada;
+exports.InputAzucar = InputAzucar;
