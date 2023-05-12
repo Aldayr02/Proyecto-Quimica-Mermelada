@@ -9,6 +9,7 @@ function putPrice(precioMan, precioAzu, precioMer) {
 }
 
 function inputManzanas(manzanas) {
+	manzanas = manzanas * 1000
 	//Proceso 1
 	let residuos1 = manzanas * ((47 * 100) / 436 / 100);
 	let manzanasPeladas = manzanas - residuos1;
@@ -22,9 +23,10 @@ function inputManzanas(manzanas) {
 	let manzanaMachacada = manzanasPicadas - residuos3;
 
 	//Proceso 4
-	let azucar = manzanaMachacada / 2;
-	let mermelada = manzanas * (325 / 436);
+	let azucar = (manzanaMachacada / 2) / 1000;
+	let mermelada = (manzanas * (325 / 436)) / 1000;
 
+	manzanas /= 1000
 	let egreso = azucar * precioAzucar + manzanas * precioManzana;
 	let ingreso = mermelada * precioMermelada;
 
@@ -32,8 +34,9 @@ function inputManzanas(manzanas) {
 }
 
 function inputMermelada(mermelada) {
+	mermelada = mermelada * 1000
 	//Proceso 1
-	let manzanas = mermelada * (436 / 325);
+	let manzanas = (mermelada * (436 / 325)) / 1000;
 	let residuos1 = manzanas * ((47 * 100) / 436 / 100);
 	let manzanasPeladas = manzanas - residuos1;
 
@@ -46,8 +49,9 @@ function inputMermelada(mermelada) {
 	let manzanaMachacada = manzanasPicadas - residuos3;
 
 	//Proceso 4
-	let azucar = (manzanaMachacada / 2) ;
+	let azucar = (manzanaMachacada / 2) / 1000;
 
+	mermelada /= 1000;
 	let egreso = azucar * precioAzucar + manzanas * precioManzana;
 	let ingreso = mermelada * precioMermelada;
 
@@ -55,6 +59,7 @@ function inputMermelada(mermelada) {
 }
 
 function inputAzucar(azucar) {
+	azucar = azucar * 1000;
 	//Proceso 1
 	let manzanasConstante = 436;
 	let residuos1 = manzanasConstante * ((47 * 100) / 436 / 100);
@@ -71,10 +76,11 @@ function inputAzucar(azucar) {
 	//Proceso 4
 	let azucarConstante = manzanaMachacada / 2;
 
-	let manzanas = (azucar * 436) / azucarConstante;
+	let manzanas = ((azucar * 436) / azucarConstante) / 1000;
 
-	let mermelada = manzanas * (325 / 436);
+	let mermelada = (manzanas * (325 / 436)) / 1000;
 
+	azucar /= 1000;
 	let egreso = azucar * precioAzucar + manzanas * precioManzana;
 	let ingreso = mermelada * precioMermelada;
 
