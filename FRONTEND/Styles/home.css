@@ -1,17 +1,17 @@
 body
 {
-    background-color:#EAB56F;
+    background-color:#9af05dce;
     padding-top: 40px;
 }
 
 
 .btn-primary {
-  background-color: #FDB064;
+  background-color: #a67df2;
   border: none;
 }
 
 .btn-primary:hover {
-  background-color: #fd9a37;
+  background-color: #bc98ff83;
 }
 
 .btn-primary.focus,
@@ -44,3 +44,4 @@ body
   background-color: #fdb064e0;
   border-color: #fdb064e0;
 }
+
